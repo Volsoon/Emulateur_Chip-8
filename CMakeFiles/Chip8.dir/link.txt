@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/Chip8.dir/src/Chip-8/Chip8.cpp.o CMakeFiles/Chip8.dir/src/main.cpp.o CMakeFiles/Chip8.dir/src/Display/Display.cpp.o -o Chip8  /usr/lib/libSDL2-2.0.so.0.18.2 

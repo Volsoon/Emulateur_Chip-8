@@ -1,4 +1,4 @@
-#include "Chip8.hpp"
+#include "../Chip-8/Chip8.hpp"
 #include <cstdint>
 
 class SDL_Window;

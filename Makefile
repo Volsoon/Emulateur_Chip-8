@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/phileas/Documents/programmation/C++/Chip-8
+CMAKE_SOURCE_DIR = /home/phileas/Documents/programmation/C++/Emulateur_Chip-8
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/phileas/Documents/programmation/C++/Chip-8
+CMAKE_BINARY_DIR = /home/phileas/Documents/programmation/C++/Emulateur_Chip-8
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/phileas/Documents/programmation/C++/Chip-8/CMakeFiles /home/phileas/Documents/programmation/C++/Chip-8//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/phileas/Documents/programmation/C++/Emulateur_Chip-8/CMakeFiles /home/phileas/Documents/programmation/C++/Emulateur_Chip-8//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/phileas/Documents/programmation/C++/Chip-8/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/phileas/Documents/programmation/C++/Emulateur_Chip-8/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -129,53 +129,53 @@ Chip8/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Chip8.dir/build.make CMakeFiles/Chip8.dir/build
 .PHONY : Chip8/fast
 
-src/Chip8.o: src/Chip8.cpp.o
-.PHONY : src/Chip8.o
+src/Chip-8/Chip8.o: src/Chip-8/Chip8.cpp.o
+.PHONY : src/Chip-8/Chip8.o
 
 # target to build an object file
-src/Chip8.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Chip8.dir/build.make CMakeFiles/Chip8.dir/src/Chip8.cpp.o
-.PHONY : src/Chip8.cpp.o
+src/Chip-8/Chip8.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Chip8.dir/build.make CMakeFiles/Chip8.dir/src/Chip-8/Chip8.cpp.o
+.PHONY : src/Chip-8/Chip8.cpp.o
 
-src/Chip8.i: src/Chip8.cpp.i
-.PHONY : src/Chip8.i
+src/Chip-8/Chip8.i: src/Chip-8/Chip8.cpp.i
+.PHONY : src/Chip-8/Chip8.i
 
 # target to preprocess a source file
-src/Chip8.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Chip8.dir/build.make CMakeFiles/Chip8.dir/src/Chip8.cpp.i
-.PHONY : src/Chip8.cpp.i
+src/Chip-8/Chip8.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Chip8.dir/build.make CMakeFiles/Chip8.dir/src/Chip-8/Chip8.cpp.i
+.PHONY : src/Chip-8/Chip8.cpp.i
 
-src/Chip8.s: src/Chip8.cpp.s
-.PHONY : src/Chip8.s
+src/Chip-8/Chip8.s: src/Chip-8/Chip8.cpp.s
+.PHONY : src/Chip-8/Chip8.s
 
 # target to generate assembly for a file
-src/Chip8.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Chip8.dir/build.make CMakeFiles/Chip8.dir/src/Chip8.cpp.s
-.PHONY : src/Chip8.cpp.s
+src/Chip-8/Chip8.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Chip8.dir/build.make CMakeFiles/Chip8.dir/src/Chip-8/Chip8.cpp.s
+.PHONY : src/Chip-8/Chip8.cpp.s
 
-src/Display.o: src/Display.cpp.o
-.PHONY : src/Display.o
+src/Display/Display.o: src/Display/Display.cpp.o
+.PHONY : src/Display/Display.o
 
 # target to build an object file
-src/Display.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Chip8.dir/build.make CMakeFiles/Chip8.dir/src/Display.cpp.o
-.PHONY : src/Display.cpp.o
+src/Display/Display.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Chip8.dir/build.make CMakeFiles/Chip8.dir/src/Display/Display.cpp.o
+.PHONY : src/Display/Display.cpp.o
 
-src/Display.i: src/Display.cpp.i
-.PHONY : src/Display.i
+src/Display/Display.i: src/Display/Display.cpp.i
+.PHONY : src/Display/Display.i
 
 # target to preprocess a source file
-src/Display.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Chip8.dir/build.make CMakeFiles/Chip8.dir/src/Display.cpp.i
-.PHONY : src/Display.cpp.i
+src/Display/Display.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Chip8.dir/build.make CMakeFiles/Chip8.dir/src/Display/Display.cpp.i
+.PHONY : src/Display/Display.cpp.i
 
-src/Display.s: src/Display.cpp.s
-.PHONY : src/Display.s
+src/Display/Display.s: src/Display/Display.cpp.s
+.PHONY : src/Display/Display.s
 
 # target to generate assembly for a file
-src/Display.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Chip8.dir/build.make CMakeFiles/Chip8.dir/src/Display.cpp.s
-.PHONY : src/Display.cpp.s
+src/Display/Display.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Chip8.dir/build.make CMakeFiles/Chip8.dir/src/Display/Display.cpp.s
+.PHONY : src/Display/Display.cpp.s
 
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
@@ -210,12 +210,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... Chip8"
-	@echo "... src/Chip8.o"
-	@echo "... src/Chip8.i"
-	@echo "... src/Chip8.s"
-	@echo "... src/Display.o"
-	@echo "... src/Display.i"
-	@echo "... src/Display.s"
+	@echo "... src/Chip-8/Chip8.o"
+	@echo "... src/Chip-8/Chip8.i"
+	@echo "... src/Chip-8/Chip8.s"
+	@echo "... src/Display/Display.o"
+	@echo "... src/Display/Display.i"
+	@echo "... src/Display/Display.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
